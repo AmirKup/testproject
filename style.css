@@ -1,0 +1,338 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after
+*::before{
+    box-sizing: inherit;
+}
+
+ul {
+    list-style:  none;
+  }
+
+li {
+    list-style:  none;
+}
+
+a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none; /* Убирает подчеркивание, если нужно */
+    color: inherit; /* Заставляет ссылку наследовать цвет текста */
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    color: inherit; /* Цвет текста */
+}
+
+.container {
+    max-width: 1513.75px;
+    margin: 0 auto;
+    padding-left: 72.57px;
+    padding-right: 75.25px;
+}
+
+body {
+    margin: 0;
+    color: rgba(21, 21, 21, 1);
+    font-family: "Montserrat", sans-serif;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 121px;
+    margin-bottom: -40px;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 0 25px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20.72px;
+    text-align: right;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+
+}
+
+.phone__item {
+    display: flex;
+    align-items: center;
+}
+
+.phone__item a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.94px;
+    letter-spacing: 0.1em;
+    text-align: left;    
+}
+
+.phone__logo img {
+    margin-right: 10px;
+}
+
+
+
+
+/* Основной блок и стили для заголовка */
+.main {
+    position: relative;
+}
+
+.top {
+    background-image: url(images/bg-logo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center right; /* Центрирование изображения */
+    background-size: cover; /* Изображение полностью покрывает блок */
+}
+
+
+.top__inner {
+    min-height: 700px;
+}
+
+.top__title {
+    font-size: 40px; 
+    margin-bottom: 15px;  
+    max-width: 615px;
+    font-weight: 600;
+    line-height: 50px;
+    padding-top: 150px;
+    padding-left: 25px;
+}
+
+.top__text {
+    font-size: 23px; 
+    color: rgba(71, 71, 71, 1);
+    max-width: 605px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+    padding-left: 25px;
+}
+
+
+.contact-buttons {
+    font-family: "Montserrat", sans-serif;
+    position: absolute; /* Абсолютное позиционирование внутри блока */
+    bottom: 280px; /* Отступ снизу */
+    right: 20px; /* Отступ справа */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Расстояние между кнопками */
+}
+
+
+button.catalog-button {
+    font-family: "Montserrat", sans-serif;
+    display: inline-block;
+    padding: 16px 80px;
+    background-color: #c79741;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+button.catalog-button:hover {
+    background-color: #b6883a;
+    transform: scale(1.04);
+}
+
+
+
+.contact-button {
+    width: 55px;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.contact-button:hover {
+    transform: scale(1.1);
+}
+
+.contact-button img {
+    width: 55px;
+    height: 55px;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+}
+
+.phone-button {
+    background-color: #c79741;
+}
+
+.whywe{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+
+}
+
+h1, .whywe__title, .top__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.whywe__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    padding-top: 75px;
+}
+
+.whywe__title::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #c79741;
+    bottom: 46.5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.whywe__text {
+    max-width: 700px; /* Ограничиваем ширину */
+    font-size: 17px;  /* Размер шрифта */
+    font-weight: 400; /* Обычная жирность */
+    line-height: 1.6; /* Высота строки для лучшего чтения */
+    text-align: center; /* Центровка текста */
+    color: rgba(119, 119, 119, 1); /* Цвет текста */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-between; /* Ensure equal spacing */
+    align-items: flex-start;
+    gap: 10px; /* Optional: Adjust as per your needs */
+    margin-top: 40px;
+}
+
+.about-us__first, .about-us__second, .about-us__third {
+    flex: 1; /* Ensure equal width for each section */
+    padding: 0 0px; /* Keep the padding as is */
+    max-width: none; /* Remove max-width limitation */
+    width: 100%; /* Set to 100% to fill the available space */
+}
+
+.about-us__second {
+    padding-left: 30px;
+}
+
+.about-us__first {
+    border-right: 1px solid rgba(220, 220, 220, 1); /* Линия справа */
+}
+
+.about-us__third {
+    border-left: 1px solid rgba(220, 220, 220, 1); /* Линия слева */
+    padding-left: 40px;
+}
+
+.about-us__first img, .about-us__second img, .about-us__third img {
+    display: block;
+    margin: 0 auto 30px; /* Центровка изображения */
+    max-width: 100px;
+    margin-left: 0;
+}
+
+.about-us__first h1, .about-us__second h1, .about-us__third h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: left;
+}
+
+.about-us__first p, .about-us__second p, .about-us__third p {
+    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    max-width: 450px;
+    color: rgba(119, 119, 119, 1);
+}
+
+
+
+.assortment__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    padding-bottom: 50px;
+    padding-top: 75px;
+}
+
+
+.assortment__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Три элемента в ряд */
+    gap: 12px; /* Расстояние между элементами */
+    padding: 0;
+    list-style: none;
+}
+
+.assortment__item {
+    position: relative; /* Это необходимо для использования абсолютного позиционирования внутри */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(228, 228, 228, 1);
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+.assortment__item:hover {
+    transform: scale(0.95);
+}
+
+.assortment__name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    min-width: 10px;
+    padding-left: 40px;
+}
+
+.assortment__img {
+    position: relative; /* Для наложения изображений друг на друга */
+    width: 100%;
+    padding-top: 60px;
+    max-width: 600px; /* Ограничиваем максимальную ширину контейнера */
+}
